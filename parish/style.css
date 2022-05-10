@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    border: 1px black solid;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 450px;
+    height: auto;
+}
+
+.picture {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.yoursHouse {
+    margin-top: 5px;
+}
+
+.results {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r1 {
+    display: flex;
+    width: 195px;
+    height: 40px;
+    border: 1px black solid;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.r2 {
+    display: flex;
+    width: 195px;
+    height: 40px;
+    border: 1px black solid;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+
+}
+
+.button {
+    height: 50px;
+    width: 100px;
+}

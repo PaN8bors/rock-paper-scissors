@@ -10,20 +10,29 @@
 <body>
     <main>
       <header>
-          <h1>ROCK - PAPER - SCISSORS</h1>
-          <h2>Make Your Choice</h2>
+          <h2>ROCK - PAPER - SCISSORS</h2>
       </header>
+      <div class="choices">
+        <img class="picture" id="yoursImg" src="../assets/rock-light.png">
+        <img class="picture" id="housesImg" src="../assets/rock-light.png">
+        <p class="yoursHouse" id="playerChoice">You Chose...</p>
+        <p class="yoursHouse" id="houseChoice">House Chose...</p>
+    </div>
+
+    <div class="results">
+        <h3 class="r1" id="results">RESULTS</h3>
+        <h3 class="r2" id="yourScore">SCORE</h3>
+    </div>
+      <h2>Make Your Choice</h2>
         <div id="yourChoice" class="buttons">
-            <button onclick="yourFunction('rock')">rock</button>
-            <button onclick="yourFunction('paper')">paper</button>
-            <button onclick="yourFunction('scissors')">scissors</button>
+            <button class="button" onclick="yourFunction('rock')">rock</button>
+            <button class="button" onclick="yourFunction('paper')">paper</button>
+            <button class="button" onclick="yourFunction('scissors')">scissors</button>
         </div>
+        
+        
         <div>
-            <p id="playerChoice">You Chose...</p>
-            <p id="houseChoice">House Chose...</p>
-        </div>
-        <div>
-            <h2 id="results">RESULTS</h2>
+            
         </div>
 
 
