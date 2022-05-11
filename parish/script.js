@@ -1,9 +1,10 @@
-
-
+let curScore = 0;
 
 // Keep score
-let curScore = 0;
-localStorage.curScore = 0;
+function saveScore() {
+    sessionStorage.setItem("score", curScore);
+}
+
 
 
 function yourFunction(initValue) {
@@ -31,7 +32,7 @@ function yourFunction(initValue) {
 
     let theHouse = houseArray[Math.floor(Math.random() * houseArray.length)];
     
-    // Append each choice its element
+    // Append each choice to its element
     document.getElementById('playerChoice').innerHTML = `You chose ${player}`;
     document.getElementById('houseChoice').innerHTML = `The house chose ${theHouse}`;
     
@@ -67,4 +68,7 @@ function yourFunction(initValue) {
             yours.src = "../assets/rock-light.png"; houses.src = "../assets/rock-light.png";
     
     }
+
+    saveScore()
+    let field = document.getElementById("yourScore");
 }
