@@ -15,9 +15,9 @@ function saveScore() {
 function yourFunction(initValue) {
   let player = initValue;
 
-  const rockImg = "../assets/rock.png";
-  const paperImg = "../assets/paper.png";
-  const scissorsImg = "../assets/scissors.png";
+  const rockImg = "./assets/rock.png";
+  const paperImg = "./assets/paper.png";
+  const scissorsImg = "./assets/scissors.png";
 
   const yours = document.getElementById("yoursImg");
   const houses = document.getElementById("housesImg");
@@ -28,10 +28,8 @@ function yourFunction(initValue) {
   let theHouse = houseArray[Math.floor(Math.random() * houseArray.length)];
 
   // Append each choice to its element
-  document.getElementById("playerChoice").innerHTML = `You chose ${player}`;
-  document.getElementById(
-    "houseChoice"
-  ).innerHTML = `The house chose ${theHouse}`;
+  document.getElementById("playerChoice").innerHTML = `You -  ${player}`;
+  document.getElementById("houseChoice").innerHTML = `House - ${theHouse}`;
 
   let display = document.getElementById("results");
 
@@ -39,43 +37,43 @@ function yourFunction(initValue) {
     case player == "rock" && theHouse == "scissors":
       display.innerHTML = "You Win!";
       curScore++;
-      yours.src = "../assets/rock.png";
-      houses.src = "../assets/scissors.png";
+      yours.src = "./assets/rock.png";
+      houses.src = "./assets/scissors.png";
       break;
     case player == "rock" && theHouse == "paper":
       display.innerHTML = "You Lose.";
       curScore--;
-      yours.src = "../assets/rock.png";
-      houses.src = "../assets/paper.png";
+      yours.src = "./assets/rock.png";
+      houses.src = "./assets/paper.png";
       break;
     case player == "paper" && theHouse == "rock":
       display.innerHTML = "You Win!";
       curScore++;
-      yours.src = "../assets/paper.png";
-      houses.src = "../assets/rock.png";
+      yours.src = "./assets/paper.png";
+      houses.src = "./assets/rock.png";
       break;
     case player == "paper" && theHouse == "scissors":
       display.innerHTML = "You Lose.";
       curScore--;
-      yours.src = "../assets/paper.png";
-      houses.src = "../assets/scissors.png";
+      yours.src = "./assets/paper.png";
+      houses.src = "./assets/scissors.png";
       break;
     case player == "scissors" && theHouse == "paper":
       display.innerHTML = "You Win!";
       curScore++;
-      yours.src = "../assets/scissors.png";
-      houses.src = "../assets/paper.png";
+      yours.src = "./assets/scissors.png";
+      houses.src = "./assets/paper.png";
       break;
     case player == "scissors" && theHouse == "rock":
       display.innerHTML = "You Lose.";
       curScore--;
-      yours.src = "../assets/scissors.png";
-      houses.src = "../assets/rock.png";
+      yours.src = "./assets/scissors.png";
+      houses.src = "./assets/rock.png";
       break;
     default:
       display.innerHTML = "Tie - Try Again";
-      yours.src = "../assets/mickeyR.png";
-      houses.src = "../assets/mickeyL.png";
+      yours.src = "./assets/mickeyR.png";
+      houses.src = "./assets/mickeyL.png";
       break;
   }
 

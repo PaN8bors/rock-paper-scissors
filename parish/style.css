@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'new_walt_disney_uiregular';
-    src: url('../font/newwaltdisneyui-8yda.woff2') format('woff2'),
-         url('../font/newwaltdisneyui-8yda.woff') format('woff');
+    src: url('./font/newwaltdisneyui-8yda.woff2') format('woff2'),
+         url('./font/newwaltdisneyui-8yda.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,7 +22,7 @@ header {
     padding-bottom: 25px;
 }
 
-h2 {
+h1, h2 {
     color: yellow;
 }
 
