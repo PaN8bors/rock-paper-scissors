@@ -74,8 +74,8 @@ function yourFunction(initValue) {
       break;
     default:
       display.innerHTML = "Tie - Try Again";
-      yours.src = "../assets/rock-light.png";
-      houses.src = "../assets/rock-light.png";
+      yours.src = "../assets/mickeyR.png";
+      houses.src = "../assets/mickeyL.png";
       break;
   }
 

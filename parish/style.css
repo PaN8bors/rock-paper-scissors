@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'new_walt_disney_uiregular';
+    src: url('../font/newwaltdisneyui-8yda.woff2') format('woff2'),
+         url('../font/newwaltdisneyui-8yda.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: new_walt_disney_uiregular;
+    background-color: black;
 }
 
 header {
@@ -9,6 +20,10 @@ header {
     border: 1px black solid;
     width: 450px;
     padding-bottom: 25px;
+}
+
+h2 {
+    color: yellow;
 }
 
 .choices {
@@ -29,12 +44,17 @@ header {
 .yoursHouse {
     display: flex;
     margin-top: 5px;
+    width: 195px;
+    justify-content: space-evenly;
+    color: white;
 }
 
 .results {
-    margin-top: 0px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 450px;
+    height: auto;
 }
 
 .r1 {
@@ -44,6 +64,7 @@ header {
     border: 1px black solid;
     align-items: center;
     justify-content: space-evenly;
+    background-color: red;
 }
 
 .r2 {
@@ -53,6 +74,7 @@ header {
     border: 1px black solid;
     align-items: center;
     justify-content: space-evenly;
+    background-color: red;
 }
 
 .buttons {
@@ -65,5 +87,6 @@ header {
 .button {
     height: 50px;
     width: 100px;
+    font-family: new_walt_disney_uiregular;
 }
 
