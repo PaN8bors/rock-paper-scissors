@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
       <header>
-          <h1>ROCK - PAPER - SCISSORS</h1>
-      
-      <div class="choices">
-        <img class="picture" id="yoursImg" src="./assets/mickeyR.png">
-        <img class="picture" id="housesImg" src="./assets/mickeyL.png">
-        <span class="yoursHouse" id="playerChoice">You - </span>
-        <span class="yoursHouse" id="houseChoice">House - </span>
-    </div>
-
-    <div class="results">
-        <h3 class="r1" id="results">RESULTS</h3>
-        <h3 class="r2" id="yourScore">SCORE</h3>
-    </div>
-      <h2>Make Your Choice</h2>
-        <div id="yourChoice" class="buttons">
-            <button class="button" onclick="yourFunction('rock')">rock</button>
-            <button class="button" onclick="yourFunction('paper')">paper</button>
-            <button class="button" onclick="yourFunction('scissors')">scissors</button>
-        </div>
-        
-        
-        <div>
-            
-        </div>
-
+        <h1>ROCK - PAPER - SCISSORS</h1>
       </header>
+        <div class="choices">
+          <img class="picture" id="yoursImg" src="./assets/mickeyR.png" />
+          <img class="picture" id="housesImg" src="./assets/mickeyL.png" />
+          <span class="yoursHouse" id="playerChoice">You - </span>
+          <span class="yoursHouse" id="houseChoice">House - </span>
+        </div>
+
+        <div class="results">
+          <h3 class="r1" id="results">RESULTS</h3>
+          <h3 class="r2" id="yourScore">SCORE</h3>
+        </div>
+        <h2>Make Your Choice</h2>
+        <div id="yourChoice" class="buttons">
+          <button class="button" onclick="yourFunction('rock')">rock</button>
+          <button class="button" onclick="yourFunction('paper')">paper</button>
+          <button class="button" onclick="yourFunction('scissors')">
+            scissors
+          </button>
+        </div>
+        <div class="reset">
+          <button class="resetButton" id="reset" onclick="resetGame()">reset</button>
+        </div>
     </main>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

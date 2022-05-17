@@ -1,10 +1,14 @@
 @font-face {
     font-family: 'new_walt_disney_uiregular';
     src: url('./font/newwaltdisneyui-8yda.woff2') format('woff2'),
-         url('./font/newwaltdisneyui-8yda.woff') format('woff');
+          url('./font/newwaltdisneyui-8yda.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+
+body {
+    background-color: black;
 }
 
 main {
@@ -12,18 +16,16 @@ main {
     flex-direction: column;
     align-items: center;
     font-family: new_walt_disney_uiregular;
-    background-color: black;
 }
 
 header {
     text-align: center;
     border: 1px black solid;
     width: 450px;
-    padding-bottom: 25px;
 }
 
 h1, h2 {
-    color: yellow;
+    color: gold;
 }
 
 .choices {
@@ -44,9 +46,10 @@ h1, h2 {
 .yoursHouse {
     display: flex;
     margin-top: 5px;
-    width: 195px;
+    width: 200px;
     justify-content: space-evenly;
     color: white;
+    font-size:  24px;;
 }
 
 .results {
@@ -57,36 +60,45 @@ h1, h2 {
     height: auto;
 }
 
-.r1 {
+.r1, .r2 {
     display: flex;
-    width: 195px;
-    height: 40px;
+    width: 200px;
+    height: 60px;
     border: 1px black solid;
     align-items: center;
     justify-content: space-evenly;
     background-color: red;
-}
-
-.r2 {
-    display: flex;
-    width: 195px;
-    height: 40px;
-    border: 1px black solid;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: red;
+    border-radius: 15px;
+    box-shadow:  -8px -8px 20px  inset;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-around;
-    width: 450px;
-
+    align-items:  center;
+    justify-content: space-between;
+    width: 400px;
 }
 
 .button {
     height: 50px;
     width: 100px;
     font-family: new_walt_disney_uiregular;
+    font-size:  18px;
+    border-radius: 15px;
+    box-shadow:  -7px -7px 15px black inset;
+}
+
+.reset {
+    padding-top: 25px;
+}
+.resetButton {
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    font-family: new_walt_disney_uiregular;
+    color: gold;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow:  -7px -7px 20px black  inset;
 }
 
